@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="JSF_HelloWorld:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="JSF_HelloWorld.war">
-      <element id="artifact" artifact-name="JSF_HelloWorld:war exploded" />
-    </root>
-  </artifact>
-</component>
