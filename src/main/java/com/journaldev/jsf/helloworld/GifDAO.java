@@ -5,7 +5,8 @@ public class GifDAO {
     private Integer id;
     private String gifLink;
 
-    public GifDAO(){
+    public GifDAO(String url){
+        this.gifLink = url;
     }
 
     public Integer getId() {
