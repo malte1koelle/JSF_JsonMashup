@@ -1,4 +1,14 @@
 h2 {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
+}
+
+#likeButton{
+    margin-left: 2%;
+    height: 40px;
+}
+
+#randomGif{
+    margin: 0 auto;
+    display: block;
 }

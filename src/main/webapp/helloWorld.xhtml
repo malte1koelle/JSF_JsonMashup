@@ -8,7 +8,9 @@
     <h:body>
         <h:outputStylesheet library="css" name="style.css"  />
         <h2>Random Giphy</h2>
-       #{helloWorld.string}
+        <iframe id="randomGif" src="https://giphy.com/embed/Eva5ChclYOKly" width="480" height="426" frameBorder="0" class="giphy-embed"/>
+            <h:commandButton id="likeButton" action="#{HelloWorld.getString}" image="resources/img/unliked.png"/>
+
     </h:body>
 
 
