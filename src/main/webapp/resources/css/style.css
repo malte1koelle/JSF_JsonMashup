@@ -3,12 +3,44 @@ h2 {
     margin-top: 3%;
 }
 
-#likeButton{
-    margin-left: 2%;
+.likeButton{
+    display: inline;
     height: 40px;
+    margin-right: 10px;
 }
 
-#randomGif{
-    margin: 0 auto;
+#divGif{
+    display:block;
+    text-align:center;
+}
+
+#newGif{
+    height: 40px;
+    margin-left: 10%;
+}
+
+.order-table-header{
+    text-align:center;
+    background:none repeat scroll 0 0 #E5E5E5;
+    border-bottom:1px solid #BBBBBB;
+    padding:16px;
+}
+
+.order-table-odd-row{
+    text-align:center;
+    background:none repeat scroll 0 0 #FFFFFF;
+    border-top:1px solid #BBBBBB;
+}
+
+.order-table-even-row{
+    text-align:center;
+    background:none repeat scroll 0 0 #F9F9F9;
+    border-top:1px solid #BBBBBB;
+}
+
+.randomGif{
+    margin-top: 5%;
     display: block;
+    text-align: center;
+
 }

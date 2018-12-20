@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Reandom Giphy</title>
+    </h:head>
+
+    <body>
+        <h:outputStylesheet library="css" name="style.css"  />
+        <h2>Favourite Gifs</h2>
+        <h:panelGroup id="divGif" layout="block">
+            <h:dataTable value="#{databaseAccess.gifs}" var="url" styleClass="order-table" headerClass="order-table-header" rowClasses="order-table-odd-row,order-table-even-row" >
+                <h:column>
+                    <f:facet name="header">URL</f:facet>
+                    <h:form>
+                        <h:commandButton value="#{url}" action="#{gifDAO.showFavouriteGif(url)}"/>
+                    </h:form>
+                </h:column>
+            </h:dataTable>
+            <h:form>
+                <h:commandButton class="randomGif" value="Random Gif" action="index"/>
+            </h:form>
+        </h:panelGroup>
+    </body>
+</html>

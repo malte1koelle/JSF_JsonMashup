@@ -6,14 +6,12 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import org.json.JSONObject;
-
 public class API {
 
     String key;
     public API(){
-        this.key = "vaO7zA7UsZDviQHEpa08W1RU0og8KpIb";
+        this.key = "geTfPGQq0PmXabebPkEvuVVtJKX7l6Yc";
     }
-
     public GifDAO getRandomGif(){
 
         JSONObject obj = new JSONObject(this.getRequest("http://api.giphy.com/v1/gifs/random?api_key=" + key));

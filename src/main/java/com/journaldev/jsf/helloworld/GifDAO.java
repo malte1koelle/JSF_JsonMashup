@@ -1,9 +1,18 @@
 package com.journaldev.jsf.helloworld;
 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+@ManagedBean
+@SessionScoped
 public class GifDAO {
 
     private Integer id;
     private String gifLink;
+
+    public GifDAO(){
+
+    }
 
     public GifDAO(String url){
         this.gifLink = url;
@@ -25,4 +34,9 @@ public class GifDAO {
         this.gifLink = gifLink;
     }
 
+
+    public String showFavouriteGif(String url){
+        this.gifLink = url;
+        return "/singleFavouriteGif.xhtml?faces-redirect=true";
+    }
 }
