@@ -27,7 +27,6 @@ public class DatabaseAccess {
         return list;
     }
 
-
     public void setNewLikedGif(String url) throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.jdbc.Driver");
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/JSF_Mashup?useSSL=false", "root", "root");
@@ -47,10 +46,6 @@ public class DatabaseAccess {
         Statement stmt = conn.createStatement();
 
         ResultSet resultSet = stmt.executeQuery("SELECT * FROM favourite_gifs WHERE url='" + url + "';");
-
-
-        int rows = resultSet.getRow();
-        System.out.println("Rows: " + rows);
         while (resultSet.next()) {
             return "../resources/img/liked.png";
         }

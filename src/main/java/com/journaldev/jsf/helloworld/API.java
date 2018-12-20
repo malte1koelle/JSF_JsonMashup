@@ -10,7 +10,7 @@ public class API {
 
     String key;
     public API(){
-        this.key = "geTfPGQq0PmXabebPkEvuVVtJKX7l6Yc";
+        this.key = "8NuHklPIzs67Nl8PmsrsayNtHGTFNkxq";
     }
     public GifDAO getRandomGif(){
 
